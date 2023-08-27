@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div > p{
+    display: none;
+    
+}
+
+div:hover > p{
+    width: 350px;
+    display: block;
+    color: aqua;
+    background-color: blueviolet;
+}
+
+div:hover{
+    color: red;
+}
+
+
+

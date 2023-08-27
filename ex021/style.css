@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+header{
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+}
+nav{
+    background-color: rgba(56, 47, 47, 0.432);
+}
+nav > a{
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+}
+nav > a:hover{
+    color: blue;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main{
+    background-color: azure;
+    padding: 10px;
+    margin: 10px;
+}
+
+.one{
+    background-color: chartreuse;
+    padding: 8px;
+    border-radius: 10px 20px 100px 0px;
+
+}
+article > aside{
+    background-color: brown;
+    
+}
+footer{
+    background-color: rgba(234, 120, 120, 0.749);
+    color: rgba(40, 120, 190, 0.61);
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+}
+footer{
+    border: 10px ;
+}
+.bola{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 50%;
+}

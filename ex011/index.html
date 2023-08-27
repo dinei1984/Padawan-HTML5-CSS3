@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abris esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do su navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="|Imagens flexivel">
+    </picture>
+    <h1>Áudios</h1>
+        <p>Vamos aprender a reproduzir áudio no site</p>
+           <!-- <audio src="Audios/Verma.mp3" autoplay controls></audio> nem sempre os navegadores vao ler esse tipo de configuração-->
+        <!--<audio preload="metadata" controls loop>
+            <source src="Audios/Verma.mp3" type="audio/mpg">
+            <source src="Audios/Verma.mp3" type="audio/ogg">
+            <source src="Audios/Verma.mp3" type="audio/wave">
+            <p>Infelizmente seu navegador não consegue repoduzir áudio</p>
+            <p>Clique <a href="Audios/Verma.mp3">aqui</a> para baixar o arquivo em mp3</p>            
+        </audio>-->
+
+        <audio controls loop>
+            <source src="Audios/Body of Water - TrackTribe.mp3" type="audio/mp3">
+            <source src="Audios/Body of Water - TrackTribe.mp3" type="audio/ogg">
+            <source src="Audios/Body of Water - TrackTribe.mp3" type="audio/wave">
+            <p>Infelizmente seu navegador não consegue reproduzir este áudio</p>
+            <p>Clique <a href="Audios/Body of Water - TrackTribe.mp3">aqui</a> para fazer o download</p>
+        </audio>
+        <hr>
+        <h1>COLOCANDO VIDEOS COM HOSPEDAGEM PROPRIA (DENTRO DO MEU SERVIDOR)</h1>
+        <video width="350px" src="Mideas/pexels-noman-khan-17436125 (1440p).mp4" controls autoplay loop>
+            <source src="Mideas/pexels-noman-khan-17436125 (1440p).mp4" type="video/mp4">
+        </video>
+
+        <br>
+        <h1>INSERINDO VÍDEOS DO YOUTUBE</h1>
+
+        <iframe width="350" height="315" src="https://www.youtube.com/embed/A1BaZr82XJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+</html> 
