@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 2px solid red;
+            
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .dois{
+            background-color: rgba(0, 0, 255, 0.664);
+        }
+        tr > .casa{
+            background-color: yellow;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <!-- Hierarquia das Tabelas
+    Table = Tabelas
+    Table row = linha na Tabelas
+    Table header = Cabeçalho da Tabelas
+    Table data = dados da tabela -->
+<h1>Minha primeira tabela</h1>
+
+    <table> 
+        <tr> <!-- Primeira linha -->
+            <td>A1</td>
+            <td>A1</td>
+            <td>A1</td>
+        </tr>
+        <tr class="dois"> <!-- Segunda linha -->
+            <td>B2</td>
+            <td>B2</td>
+            <td>B2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td class="casa">C3</td>
+            <td>C3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>D4</td>
+            <td>D4</td>
+            <td  class="casa">D4</td>
+        </tr>
+    </table>
+<h1>/tabelas de times por estados</h1>
+
+    <table>
+        <tr>
+            <td></td>
+            <td class="casa">São Paulo</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="dois">
+            <td>São paulo</td>
+            <td>Palmeiras</td>
+            <td>Corinthians</td>
+            <td>Santos</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="casa">Rio de Janeiro</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr class="dois">
+            <td>Flamengo</td>
+            <td>Fluminense</td>
+            <td>Vasco</td>
+            <td>Botafogo</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="casa">Rio Grande do Sul</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr class="dois">
+            <td>Inter</td>
+            <td>Gremio</td>
+            <td>Juventude</td>
+            <td>Brasil de Pelotas</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
