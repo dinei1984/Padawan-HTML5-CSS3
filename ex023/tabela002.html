@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        caption{
+            font-size: 35px;
+            color: black;
+            text-shadow: 2px 2px 5px gray;
+
+        }
+        table{
+            border-collapse: collapse;
+            width: 700px;
+            height: 500px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+        }
+        tr{
+            height: 35px;
+        }
+        thead,tfoot{
+            
+            font-size: 25px;
+        }
+        thead{
+            font-style: italic;
+        }
+        th,tfoot{
+            background-color: rgb(204, 116, 116);
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+        
+        
+        td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+        
+        .pb{
+            background-image: linear-gradient(to top, black,gray,white);
+        }
+        .spfc{
+            background-image: linear-gradient(to top, black 15%,red 35%,white);
+            color: white; 
+            
+        }
+        .verde{
+            background-color: green;
+        }
+        .white{
+            background-image: linear-gradient(to top, black 1%, white 1%, gray);
+        }
+        .fla{
+            background-image: linear-gradient(to top, black,red);
+            color: white;
+        }
+        .flu{
+            background-image: linear-gradient(to top, rgba(89, 211, 89, 0.89),rgb(187, 66, 66),white);
+        }
+        #separacao{
+            border-bottom: 3px solid red;
+        }
+        #sp:hover{
+            color:red;
+        }
+        #sp::before{            
+            content:  "🇧🇷";
+            margin-right: 5px;
+        }
+        a{
+            text-decoration: none;            
+        }
+        .spfc > a{
+            color: white;
+        }
+        .spfc > a:hover{
+            color: black;
+        }
+        .verde > a{
+            color: black;
+        }
+        .pb > a{
+            color: black;
+        }
+        .cor{
+            
+            text-align: center;
+        }
+        .inter{
+            background-image: linear-gradient(to top, red,white);
+        }
+        .gre{
+            background-image: linear-gradient(to top, blue, white, black);
+        }
+        .juve{
+            background-image: linear-gradient(to top, white 0.1%, rgba(13, 139, 13, 0.918) );
+        }
+        tbody > tr:nth-child(2n){
+            background-color: gray;
+        }
+        /* tfoot{
+            font-size: 25px;
+        } */
+
+    </style>
+    <title>Exercicio de tabelas</title>
+</head>
+<body>
+    <h1>Tabelas com tags semanticas</h1>
+
+    
+    <table>
+        <caption>
+            Times separados por Estados e suas Cores
+        </caption>
+        <thead>   <!-- Cabeçalho da tabela -->
+            <th scope="col"> <!--Titulo de coluna por isso usa-se o sccope = col -->
+                Estados
+            </th>
+            <th scope="col"> <!--Titulo de coluna por isso usa-se o sccope = col -->
+                Times
+            </th>
+            <th scope="col"> <!--Titulo de coluna por isso usa-se o sccope = col -->
+                Cor Predominante
+            </th>
+        </thead>
+        <tbody>
+            <tr style="height: 45px;"> <!--Row =linha -->
+                <td id="sp">São Paulo</td> <!-- Dados da tabela -->
+                <td class="spfc"><a href="https://www.youtube.com/@saopaulofc" target="_blank">São Paulo</a></td>
+                <td class="cor">Tricolor</td>
+            </tr>
+            <tr>
+                <td id="sp">São Paulo</td>
+                <td class="verde"><a href="https://www.youtube.com/@paulomassini" target="_blank">Palmeiras</a></td>
+                <td class="cor">Verde</td>
+            </tr>
+            <tr>
+                <td id="sp">São Paulo</td>
+                <td class="pb"><a href="https://www.youtube.com/@corinthians" target="_blank">Corinthians</a></td>
+                <td class="cor">Preto e branco</td>
+            </tr>
+            <tr id="separacao">
+                <td id="sp">São Paulo</td>
+                <td class="white">Santos</td>
+                <td class="cor">Branco</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="fla">Flamengo</td>
+                <td class="cor">Preto e Vermelho</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="pb">Vasco da Gama</td>
+                <td class="cor">Preto e Branco</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="flu">Fluminense</td>
+                <td class="cor">Vermelho Branco Verde</td>
+            </tr>
+            <tr>
+                <td id="separacao">Rio de Janeiro</td>
+                <td class="pb">Botafogo</td>
+                <td class="cor">Preto e Branco</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="inter">Internacional</td>
+                <td class="">Vermelho</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="gre">Gremio</td>
+                <td class="">Azul Preto e Branco</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="juve">Juventude</td>
+                <td class="">Verde Branco</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="fla">Brasil de Pelotas</td>
+                <td class="">Preto Vermelho</td>
+            </tr>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="inter">Internacional</td>
+            <td class="">Vermelho</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="gre">Gremio</td>
+            <td class="">Azul Preto e Branco</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="juve">Juventude</td>
+            <td class="">Verde Branco</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="fla">Brasil de Pelotas</td>
+            <td class="">Preto Vermelho</td>
+        </tr>
+    </tr>
+    <tr>
+        <td>Rio Grande do Sul</td>
+        <td class="inter">Internacional</td>
+        <td class="">Vermelho</td>
+    </tr>
+    <tr>
+        <td>Rio Grande do Sul</td>
+        <td class="gre">Gremio</td>
+        <td class="">Azul Preto e Branco</td>
+    </tr>
+    <tr>
+        <td>Rio Grande do Sul</td>
+        <td class="juve">Juventude</td>
+        <td class="">Verde Branco</td>
+    </tr>
+    <tr>
+        <td>Rio Grande do Sul</td>
+        <td class="fla">Brasil de Pelotas</td>
+        <td class="">Preto Vermelho</td>
+    </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row"><strong>Total de Times</strong></th>
+                <td></td>
+                <td><strong>8</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
