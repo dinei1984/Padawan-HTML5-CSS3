@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
+        table{
+            border-collapse: collapse;
+            width: 450px;
+            height: 50px;
+        }
+        th{
+            padding: 15px;
+            background-color: grey;
+            color: white;
+        }
+        .notas{
+            height: 15px;
+        }
+        td,th{
+            border: 1px solid black;
+        }
+
     </style>
     <title>Desafio de tableas</title>
 </head>
 <body>
     <table>
-        <th>Área</th>
-        <th>Disciplina</th>
-        <tr>
-            <td>notas</td>
-        </tr>
+        <thead>
+            <th>Área</th>
+            <th>Disciplina</th>            
+            <tr>
+                <td>Notas</td>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <th>Exatas</th>
+                
+            </tr>
+            
+        </tbody>
+
     </table>
 </body>
 </html>
