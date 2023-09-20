@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            width: 600px;
+            height: 200px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size: 2em;
+        }
+        th,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        .cnome{
+            background-color: lawngreen;
+        }
+        .csexo{
+            background-color: aqua;
+        }
+        .cprofissao{
+            background-color: olive;
+        }
+        .cgrupo{
+            background-color: crimson;
+        }
+    </style>
+    <title>Exercicio de Tabela</title>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome"><!--  posso usar esse recurso para poder selecionar uma coluna inteira para poder estilizar -->
+            <col class="csexo">
+            <col class="cgrupo" span="2"> <!-- posso usar o grupo junto com o span e o numero de colunas que vai atingir -->
+                        
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Dinei</td>
+            <td>M</td>
+            <td>39</td>
+            <td>Programador</td>
+        </tr>
+        <tr> 
+            <td>Fernanda</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Programadora</td>
+        </tr>
+        <tr>
+            <td>Thiago</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Adm</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+    </table>
+</body>
+</html>
