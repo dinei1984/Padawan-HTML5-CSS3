@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1, initial-scale=1.0">
+    <style>
+        /* por padrão as folhas de estilo css sempre sobresaem em questão de hierarquia de estili */
+        iframe{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
     <title>Estudos de Iframe</title>
 </head>
 <body>
     <h1>Testando o uso de Iframe</h1>
-    <p>Acessando o site do 
+    <!-- tamanho padrão do iframe é de 300x150 -->
+    <p>Acessando o site da 
         
-        <iframe src="https://github.com/" frameborder="0"></iframe>
+        <iframe src="https://www.bibliaonline.com.br/acf" frameborder="0'" height="500
+        " width="400" scolling="no"></iframe><!--scooling serve para deixar ou não o conteudo da iframe com scrowbar-->
         
-        Curso em Video para aprender a programar</p>
+        <a href="https://www.bibliaonline.com.br/acf" target="_blank">Bíblia online</a> para aprender a palavra de DEUS</p>
+
+        <h1>Colocando meu conteudo no iframe</h1>
+
+        <p>este é meu site sobre o bugdroid
+            <iframe src="https://dinei84.github.io/Android/" frameborder="0"></iframe>
+        </p>
 </body>
 </html>
