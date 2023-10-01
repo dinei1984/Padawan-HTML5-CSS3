@@ -12,10 +12,13 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form autocomplete="off" >
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" method="post" autocomplete="off" >
+        <p><label for="nome">Nome:</label> 
+            <input type="text" name="nome" id="nome"></p>
+        <p><label for="sobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="sobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
+    <!-- a tag label serve para relacionar o texto do form com o input, sem ela não vai ter relação entre as duas coisas -->
 </body>
-</html>
+</html> 
