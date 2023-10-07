@@ -18,7 +18,11 @@
 
             <p>
                 <label for="irange">Nível de Satisfação</label>
-                <input type="range" name="range" id="irange">
+                <input type="range" name="range" id="irange" min="1" max="10" value="3">
+            </p>
+            <p>
+                <label for="ifile">Foto de perfil</label>
+                <input type="file" name="file" id="ifile"> <!--Quando u8sarmos o input file, não podemos usar o metodo de formulario get, preciamos usar o metodo "post" / sempre que formos utilizar elementos que utilizam mais de 3k bites, devemos usar o metodo post -->
             </p>
 
         </fieldset>
