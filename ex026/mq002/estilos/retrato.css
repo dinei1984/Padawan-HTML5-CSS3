@@ -1,3 +1,18 @@
 @charset "utf-8";
 
 /* APARELHO EM PÉ */
+
+body{
+    background-color: lightsalmon;
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+h1{
+    color: black;
+    text-shadow: 2px 2px 6px black;
+}
