@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1 id="principal">Criando sites com HTML</h1>
-    <h2>Aprendendo HTML</h2>
+    <h2 id="aprendendo">Aprendendo HTML</h2>
     <h3 class="basico">HTML Basico</h3>
     <p>Lorem ipsum dolor, sit amet <spam class="intermediario">consectetur adipisicing elit</spam>. Nemo error alias ipsa eum animi blanditiis cum amet. At ipsum cupiditate adipisci dicta pariatur impedit, est alias dignissimos ad? Architecto, in? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga harum voluptate sed fugiat quos quam eaque maiores culpa dicta, modi nisi adipisci distinctio dolor asperiores laboriosam! Ea asperiores blanditiis omnis?</p>
     <h3 class="intermediario">HTML Intermediario</h3>
@@ -19,9 +19,31 @@
     <h2>Aprendendo CSS3</h2>
     <h3 class="basico">CSS3 Basico</h3>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo error alias ipsa eum animi blanditiis cum amet. At ipsum cupiditate adipisci dicta pariatur impedit, est alias dignissimos ad? Architecto, in? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga harum voluptate sed fugiat quos quam eaque maiores culpa dicta, modi nisi adipisci distinctio dolor asperiores laboriosam! Ea asperiores blanditiis omnis?</p>
-    <h3 class="intermediario">CSS3 Intermediario</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo error alias ipsa eum animi blanditiis cum amet. At ipsum cupiditate adipisci dicta pariatur impedit, est alias dignissimos ad? Architecto, in? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga harum voluptate sed fugiat quos quam eaque maiores culpa dicta, modi nisi adipisci distinctio dolor asperiores laboriosam! Ea asperiores blanditiis omnis?</p>
-    <h3 class="avancado">CSS3 Avançado</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo error alias ipsa eum animi blanditiis cum amet. At ipsum cupiditate adipisci dicta pariatur impedit, est alias dignissimos ad? Architecto, in? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga harum voluptate sed fugiat quos quam eaque maiores culpa dicta, modi nisi adipisci distinctio dolor asperiores laboriosam! Ea asperiores blanditiis omnis?</p>
+    <div class="box">
+        <h3 class="intermediario">CSS3 Intermediario</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo error alias ipsa eum animi blanditiis cum amet. At ipsum cupiditate adipisci dicta pariatur impedit, est alias dignissimos ad? Architecto, in? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga harum voluptate sed fugiat quos quam eaque maiores culpa dicta, modi nisi adipisci distinctio dolor asperiores laboriosam! Ea asperiores blanditiis omnis?</p>
+    </div>
+    <h3 id="avancado">CSS3 Avançado</h3>
+    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo error alias ipsa eum animi blanditiis cum amet. At ipsum cupiditate adipisci dicta pariatur impedit, est alias dignissimos ad? Architecto, in? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga harum voluptate sed fugiat quos quam eaque maiores culpa dicta, modi nisi adipisci distinctio dolor asperiores laboriosam! Ea asperiores blanditiis omnis?</p>
+
+
+    <script>
+        var h3 = window.document.getElementById('avancado')
+        h3.style.background = 'black'
+        h3.style.color ='white'
+
+        var p = window.document.getElementsByClassName('p')[0]
+        p.style.color = 'white'
+        p.style.background = 'lightgreen'
+
+        var box = window.document.querySelector('div.box')
+        box.style.background = 'lightgrey'
+        box.innerText = 'oi'
+
+        var aprendendo = window.document.getElementById('aprendendo')
+        aprendendo.style.color = 'black'
+        aprendendo.style.background = 'white'
+
+    </script>
 </body>
 </html>
