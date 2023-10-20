@@ -21,6 +21,7 @@ menu{
 }
 menu > ul{
     list-style-type: none;
+    
 }
 menu > ul > li > a{
     display: block;
@@ -28,5 +29,5 @@ menu > ul > li > a{
     text-decoration: none;
     text-align: center;
     background-color: rgb(80, 77, 77);
-    color: white;
+    color: white;    
 }
