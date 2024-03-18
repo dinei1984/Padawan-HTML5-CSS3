@@ -1,13 +1,3 @@
-
-document.getElementById("limpar").addEventListener("keyup", function(event) {
-    // Verifica se a tecla pressionada é a tecla "Enter"
-    if (event.key === "Enter") {
-        // Chama a função clicar() quando a tecla "Enter" for pressionada
-        clicar();
-    }
-});
-
-
 function calcular() {    
     let pesos = [];
     let alturas = [];
@@ -27,7 +17,7 @@ function calcular() {
     resultado += `c) Pessoas com menos de 50kg e menos de 1.60m: ${pessoasMenos50KgMenos160}\n`;
     resultado += `d) Pessoas com mais de 1.90m e pesam mais de 100kg: ${pessoasMais190AlturaMais100Peso}`;
 
-    document.getElementById('resultado').value = resultado;
+    document.getElementById('resultado').textContent = resultado;
 }
 
 function limparCampos() {
@@ -35,27 +25,5 @@ function limparCampos() {
         document.getElementById('pso' + i).value = "";
         document.getElementById('alt' + i).value = "";
     }
-    document.getElementById('resultado').value = "";
-}
-
-
-
-
-
-
-
-
-function limparCampos() {
-    document.getElementById('pso1').value = "";
-    document.getElementById('alt1').value = "";
-
-    document.getElementById('pso2').value = "";
-    document.getElementById('alt2').value = "";
-
-    document.getElementById('pso3').value = "";
-    document.getElementById('alt3').value = "";
-
-    document.getElementById('pso4').value = "";
-    document.getElementById('alt4').value = "";
-    
+    document.getElementById('resultado').textContent = "";
 }
