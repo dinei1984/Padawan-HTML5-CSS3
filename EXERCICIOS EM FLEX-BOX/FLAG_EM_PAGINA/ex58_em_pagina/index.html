@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 58</title>
+</head>
+<body>
+    
+    <h2>Somatório das idades dos alunos</h2>
+    
+    <label for="idadeInput">Digite a idade do aluno (ou 999 para sair): </label>
+    <input type="number" id="idadeInput">
+    <button onclick="adicionarIdade()">Adicionar</button>
+    <br><br>
+    
+    <div id="resultado"></div>
+    
+    <script>
+        var qtdAlunos = 0;
+        var somaIdade = 0;
+        var mediaIdade = 0;
+    
+        function adicionarIdade(){
+            var idadeInput = document.getElementById('idadeInput');
+            var numero = parseInt(idadeInput.value);
+    
+            if(numero === 999){
+                mostrarResultado();
+            } else {
+                qtdAlunos += 1;
+                somaIdade += numero;
+                mediaIdade = somaIdade / qtdAlunos;
+                idadeInput.value = "";
+            }
+        }
+    
+        function mostrarResultado(){
+            var resultadoDiv = document.getElementById('resultado');
+            var p = document.createElement('p');
+            p.textContent = (`A media das idades dos alunos é: ${mediaIdade} e a quantodade de alunos é: ${qtdAlunos}`)
+            resultadoDiv.appendChild(p);
+        }
+    </script>
+    </body>
+</html>

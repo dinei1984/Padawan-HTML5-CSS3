@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Somatório de Números</title>
+</head>
+<body>
+
+<h2>Somatório de Números</h2>
+
+<label for="numeroInput">Digite um número (ou 1111 para sair): </label>
+<input type="number" id="numeroInput">
+<button onclick="adicionarNumero()">Adicionar</button>
+<br><br>
+
+<div id="resultado"></div>
+
+<script>
+// Função para adicionar números e calcular o somatório
+function adicionarNumero() {
+    // Obtendo o elemento de entrada de número
+    var numeroInput = document.getElementById("numeroInput");
+    // Obtendo o valor do número
+    var numero = parseInt(numeroInput.value);
+
+    // Verificando se o número é 1111 para sair
+    if (numero === 1111) {
+        // Exibindo o resultado final
+        mostrarResultado();
+    } else {
+        // Somando o número ao somatório
+        soma += numero;
+        // Limpando o campo de entrada
+        numeroInput.value = "";
+    }
+}
+
+// Função para mostrar o resultado final
+function mostrarResultado() {
+    // Obtendo o elemento de resultado
+    var resultadoDiv = document.getElementById("resultado");
+    // Criando um novo elemento de parágrafo para exibir o resultado
+    var p = document.createElement("p");
+    // Definindo o texto do parágrafo com o somatório
+    p.textContent = "O somatório dos números é: " + soma;
+    // Adicionando o parágrafo à div de resultado
+    resultadoDiv.appendChild(p);
+}
+
+// Variável para armazenar o somatório dos números
+var soma = 0;
+</script>
+
+</body>
+</html>
